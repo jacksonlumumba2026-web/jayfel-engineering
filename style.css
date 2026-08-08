@@ -672,3 +672,50 @@ h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 22px; }
   .header-inner { padding: 0 20px; }
   .media-badge { left: 0; bottom: -16px; padding: 12px 16px; }
 }
+
+/* ===================== PROJECTS PAGE ADDITIONS ===================== */
+.filter-section { padding-top: 70px; padding-bottom: 0; }
+
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.filter-tab {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--grey-line);
+  background: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-soft);
+  transition: all .2s ease;
+}
+.filter-tab:hover { border-color: var(--red); color: var(--red); }
+.filter-tab.active {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+
+.full-grid { margin-top: 40px; }
+
+.project-detail {
+  padding: 70px 0;
+  border-top: 1px solid var(--grey-line);
+}
+
+.spec-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--grey-line);
+  font-size: 14.5px;
+  color: var(--text-soft);
+}
+.spec-list li strong { color: var(--text); font-weight: 600; }
+.spec-list li:last-child { border-bottom: none; }
+
+@media (max-width: 820px) {
+  .filter-tabs { justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; }
+}
