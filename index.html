@@ -14,11 +14,20 @@
 </head>
 <body>
 
+<!-- ===================== LOADING INTRO ===================== -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <img src="assets/logo.jpg" alt="Jayfel Engineering Limited" class="preloader-logo">
+    <div class="preloader-bar"><span></span></div>
+    <p class="preloader-text">YOUR HOUSING PARTNER</p>
+  </div>
+</div>
+
 <!-- ===================== HEADER / NAV ===================== -->
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <span class="brand-mark">JE<span class="brand-mark-accent">L</span></span>
+      <img src="assets/logo.jpg" alt="Jayfel Engineering Limited logo" class="brand-logo">
       <span class="brand-name">JAYFEL<br><small>ENGINEERING LTD</small></span>
     </a>
 
@@ -32,7 +41,7 @@
     </nav>
 
     <div class="header-actions">
-      <a href="quote.html" class="btn btn-gold header-cta">Request a Quote</a>
+      <a href="quote.html" class="btn btn-primary header-cta">Request a Quote</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -48,12 +57,12 @@
   </div>
 
   <div class="hero-content">
-    <p class="eyebrow">NCA Registered &middot; Kilifi &amp; Mombasa, Kenya</p>
-    <h1>We build the Coast's<br><span class="text-gold">housing standards</span>, one slab at a time.</h1>
-    <p class="hero-sub">From foundation to finish — Jayfel Engineering Limited delivers apartments, villas and civil works across Kilifi and Mombasa with compliance, craft and care.</p>
+    <p class="eyebrow">NCA Registered &middot; Kilifi District, Kenya</p>
+    <h1>We build the Coast's<br><span class="text-red">housing standards</span>, one slab at a time.</h1>
+    <p class="hero-sub">From foundation to finish — Jayfel Engineering Limited delivers apartments, villas and civil works across Kilifi with compliance, craft and care.</p>
 
     <div class="hero-actions">
-      <a href="quote.html" class="btn btn-gold btn-lg">Request a Quote</a>
+      <a href="quote.html" class="btn btn-primary btn-lg">Request a Quote</a>
       <a href="projects.html" class="btn btn-outline btn-lg">View Our Projects</a>
     </div>
   </div>
@@ -81,7 +90,7 @@
     </div>
     <div class="stat">
       <span class="stat-num">Kilifi</span>
-      <span class="stat-label">&amp; Mombasa Coverage</span>
+      <span class="stat-label">Coastal Kenya Coverage</span>
     </div>
   </div>
 </section>
@@ -183,7 +192,7 @@
       <h2>Ready to build with us?</h2>
       <p>Tell us about your plot and your plans — we'll get back to you with a clear, honest quote.</p>
     </div>
-    <a href="quote.html" class="btn btn-gold btn-lg">Request a Quote</a>
+    <a href="quote.html" class="btn btn-primary btn-lg">Request a Quote</a>
   </div>
 </section>
 
@@ -191,7 +200,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-col footer-brand">
-      <span class="brand-mark">JE<span class="brand-mark-accent">L</span></span>
+      <img src="assets/logo.jpg" alt="Jayfel Engineering Limited logo" class="footer-logo">
       <p>Jayfel Engineering Limited<br>NCA-registered construction &amp; civil engineering.</p>
     </div>
 
@@ -205,13 +214,18 @@
 
     <div class="footer-col">
       <h4>Contact</h4>
-      <p>Robert Muli Gardens, Kilifi District<br>P.O. Box 150, 80109, Kenya</p>
-      <p>+254 700 000 000<br>info@jayfelengineeringltd.com</p>
+      <p>Robert Muli Gardens<br>Kilifi District, P.O. Box 150<br>Postal Code 80109, Kenya</p>
+      <p>
+        <!-- ADD YOUR PHONE -->
+        Phone: <em>add number here</em><br>
+        <!-- ADD YOUR EMAIL -->
+        Email: <em>add email here</em>
+      </p>
     </div>
 
     <div class="footer-col">
       <h4>Get Started</h4>
-      <a href="quote.html" class="btn btn-gold">Request a Quote</a>
+      <a href="quote.html" class="btn btn-primary">Request a Quote</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -220,6 +234,7 @@
 </footer>
 
 <!-- ===================== FLOATING WHATSAPP BUTTON ===================== -->
+<!-- ADD YOUR WHATSAPP NUMBER: replace 254700000000 below -->
 <a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
   <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
     <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.912 6.482L4 29l7.72-1.877A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.583 1.114 1.14-4.464-.232-.366A9.78 9.78 0 0 1 5.818 15c0-5.618 4.564-10.182 10.183-10.182 5.618 0 10.182 4.564 10.182 10.182 0 5.619-4.564 10.182-10.182 10.182zm5.593-7.632c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.968 1.198-.178.204-.357.23-.663.077-.306-.153-1.29-.475-2.457-1.516-.908-.81-1.522-1.812-1.7-2.118-.178-.306-.019-.472.134-.624.138-.137.306-.357.459-.535.153-.178.204-.306.306-.51.102-.204.05-.383-.026-.535-.077-.153-.688-1.658-.943-2.27-.248-.596-.5-.516-.688-.525-.178-.008-.383-.01-.586-.01-.204 0-.535.077-.815.383-.28.306-1.068 1.043-1.068 2.543 0 1.5 1.093 2.949 1.245 3.153.153.204 2.15 3.283 5.207 4.604.727.314 1.294.501 1.737.641.73.232 1.394.199 1.92.121.586-.087 1.81-.74 2.065-1.454.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z"/>
@@ -227,6 +242,17 @@
 </a>
 
 <script src="script.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Preloader: hide once page is fully loaded
+  window.addEventListener('load', function () {
+    var preloader = document.getElementById('preloader');
+    setTimeout(function () {
+      preloader.classList.add('preloader-hidden');
+      setTimeout(function () { preloader.style.display = 'none'; }, 600);
+    }, 500);
+  });
+</script>
 </body>
-        </html>
+</html>
