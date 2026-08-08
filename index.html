@@ -245,13 +245,13 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Preloader: hide once page is fully loaded
-  window.addEventListener('load', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     var preloader = document.getElementById('preloader');
-    setTimeout(function () {
-      preloader.classList.add('preloader-hidden');
-      setTimeout(function () { preloader.style.display = 'none'; }, 600);
-    }, 500);
+    if (preloader) {
+      setTimeout(function () {
+        preloader.classList.add('preloader-hidden');
+      }, 300);
+    }
   });
 </script>
 </body>
