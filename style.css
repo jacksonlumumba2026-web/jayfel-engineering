@@ -821,4 +821,81 @@ h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 22px; }
   .cert-card-head { flex-direction: column; }
   .cert-number { text-align: left; }
   .verification-inner { flex-direction: column; }
+}/* ===================== QUOTE PAGE ADDITIONS ===================== */
+.quote-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.quote-steps { display: flex; flex-direction: column; gap: 22px; margin: 28px 0 30px; }
+.quote-steps li { display: flex; gap: 16px; align-items: flex-start; }
+.quote-step-num {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--red);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+}
+.quote-steps strong { display: block; font-size: 14.5px; margin-bottom: 4px; }
+.quote-steps p { font-size: 13.5px; color: var(--text-soft); line-height: 1.6; }
+
+.quote-badge-box { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.quote-form-wrap select {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--grey-line);
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  color: var(--text);
+  transition: border-color .2s ease;
+}
+.quote-form-wrap select:focus { outline: none; border-color: var(--red); }
+
+.faq-list { display: flex; flex-direction: column; gap: 14px; margin-top: 36px; }
+.faq-item {
+  background: var(--charcoal-soft);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  font-size: 20px;
+  color: var(--red);
+  margin-left: 12px;
+  transition: transform .2s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--grey);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .quote-layout { grid-template-columns: 1fr; gap: 40px; }
 }
