@@ -157,7 +157,19 @@ h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 22px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity .6s ease, visibility .6s ease;
+  animation: preloaderAutoHide 0.6s ease forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes preloaderAutoHide {
+  from { opacity: 1; visibility: visible; }
+  to   { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+.preloader-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 .preloader-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 
