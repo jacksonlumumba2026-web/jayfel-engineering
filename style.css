@@ -215,8 +215,12 @@ h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 22px; }
   height: var(--header-h);
   background: rgba(21,24,28,0.85);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
+  border-bottom: 1px solid rgba(255,255,255,0.08);}
+   .site-header.scrolled {
+  background: rgba(21,24,28,0.97);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+   }
+
 
 .header-inner {
   max-width: 1300px;
