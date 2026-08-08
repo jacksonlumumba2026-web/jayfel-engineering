@@ -11,6 +11,7 @@
   --grey: #8A8D91;
   --grey-light: #F2F2F3;
   --grey-line: #E4E4E6;
+  --off-white: #FAF8F6;
   --white: #FFFFFF;
   --text: #1A1A1A;
   --text-soft: #55585C;
@@ -73,7 +74,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 0 32px;
 }
 .section-white { background: var(--white); }
-.section-dark  { background: var(--charcoal); color: var(--white); }
+
+/* NOTE: .section-dark now renders as a bright, warm off-white
+   section (not literal dark) — the hero, nav and footer stay
+   dark to bookend the page, so this section brightens the
+   middle without hurting contrast anywhere. */
+.section-dark { background: var(--off-white); color: var(--text); }
 
 .text-red { color: var(--red); }
 
@@ -89,7 +95,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .eyebrow-dark { color: var(--red-dark); }
 
-.section-title-light { color: var(--white); }
+.section-title-light { color: var(--text); }
 
 h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 22px; }
 
@@ -102,8 +108,8 @@ h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 22px; }
   transition: border-color .25s ease;
 }
 .link-arrow:hover { border-color: var(--red); }
-.link-arrow-light { color: var(--white); }
-.link-arrow-light:hover { border-color: var(--white); }
+.link-arrow-light { color: var(--red); }
+.link-arrow-light:hover { border-color: var(--red); }
 
 /* ===================== BUTTONS ===================== */
 .btn {
@@ -449,19 +455,31 @@ h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 22px; }
   margin-top: 48px;
 }
 .service-card {
-  background: var(--charcoal-soft);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--white);
+  border: 1px solid var(--grey-line);
   border-radius: var(--radius-lg);
   padding: 32px 26px;
-  transition: transform .25s ease, border-color .25s ease;
+  box-shadow: var(--shadow-soft);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
 .service-card:hover {
   transform: translateY(-6px);
   border-color: var(--red);
+  box-shadow: var(--shadow-strong);
 }
-.service-icon { font-size: 30px; margin-bottom: 18px; }
-.service-card h3 { font-size: 18px; color: var(--white); margin-bottom: 10px; }
-.service-card p { font-size: 14px; color: var(--grey); line-height: 1.6; }
+.service-icon {
+  font-size: 26px;
+  margin-bottom: 18px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(216,30,30,0.08);
+  border-radius: var(--radius-sm);
+}
+.service-card h3 { font-size: 18px; color: var(--text); margin-bottom: 10px; }
+.service-card p { font-size: 14px; color: var(--text-soft); line-height: 1.6; }
 
 /* ===================== PROJECT CARDS ===================== */
 .project-grid {
