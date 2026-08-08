@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Jayfel Engineering Limited — Kilifi, Kenya</title>
+<meta name="description" content="Get in touch with Jayfel Engineering Limited, NCA-registered construction company based in Kilifi, Kenya.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== LOADING INTRO ===================== -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <img src="logo.jpg" alt="Jayfel Engineering Limited" class="preloader-logo">
+    <div class="preloader-bar"><span></span></div>
+    <p class="preloader-text">YOUR HOUSING PARTNER</p>
+  </div>
+</div>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.jpg" alt="Jayfel Engineering Limited logo" class="brand-logo">
+      <span class="brand-name">JAYFEL<br><small>ENGINEERING LTD</small></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="quote.html" class="btn btn-primary header-cta">Request a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PAGE BANNER ===================== -->
+<section class="page-banner">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1800&q=80" alt="Construction site at dusk" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="page-banner-content">
+    <p class="eyebrow">Get In Touch</p>
+    <h1>Contact Us</h1>
+    <p class="hero-sub">Have a plot, a project, or just a question? We'd like to hear from you.</p>
+  </div>
+</section>
+
+<!-- ===================== CONTACT DETAILS + FORM ===================== -->
+<section class="section section-white">
+  <div class="section-inner two-col contact-layout">
+
+    <div class="contact-info">
+      <p class="eyebrow eyebrow-dark">Reach Us</p>
+      <h2>Let's Talk About Your Build</h2>
+      <p class="contact-lead">Whether you're planning an apartment block or a single villa, tell us a little about it and we'll get back to you.</p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Registered Address</strong>
+            <p>Robert Muli Gardens<br>Kilifi District, P.O. Box 150<br>Postal Code 80109, Kenya</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">📞</span>
+          <div>
+            <strong>Phone</strong>
+            <!-- ADD YOUR PHONE -->
+            <p><em>add number here</em></p>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <!-- ADD YOUR EMAIL -->
+            <p><em>add email here</em></p>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">💬</span>
+          <div>
+            <strong>WhatsApp</strong>
+            <!-- ADD YOUR WHATSAPP NUMBER -->
+            <p><a href="https://wa.me/254700000000" target="_blank" rel="noopener">Chat with us directly</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-form-wrap">
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <label for="cf-name">Full Name</label>
+          <input type="text" id="cf-name" name="name" required placeholder="Your name">
+        </div>
+
+        <div class="form-row form-row-split">
+          <div>
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="cf-phone">Phone</label>
+            <input type="tel" id="cf-phone" name="phone" placeholder="+254 7XX XXX XXX">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="e.g. Villa construction enquiry">
+        </div>
+
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="6" required placeholder="Tell us about your plot and your plans..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg form-submit">Send Message</button>
+        <p class="form-note">Submitting opens your email app with this message pre-filled, ready to send to us.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== MAP ===================== -->
+<section class="section section-dark map-section">
+  <div class="section-inner">
+    <p class="eyebrow">Find Us</p>
+    <h2 class="section-title-light">Kilifi, Kenya</h2>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps?q=Kilifi,Kenya&output=embed"
+        width="100%" height="420" style="border:0;"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Jayfel Engineering Limited location map">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<section class="cta-band">
+  <div class="section-inner cta-inner">
+    <div>
+      <h2>Prefer a straight quote?</h2>
+      <p>Skip the back-and-forth — tell us the details up front and get a clear estimate.</p>
+    </div>
+    <a href="quote.html" class="btn btn-primary btn-lg">Request a Quote</a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <img src="logo.jpg" alt="Jayfel Engineering Limited logo" class="footer-logo">
+      <p>Jayfel Engineering Limited<br>NCA-registered construction &amp; civil engineering.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Robert Muli Gardens<br>Kilifi District, P.O. Box 150<br>Postal Code 80109, Kenya</p>
+      <p>
+        <!-- ADD YOUR PHONE -->
+        Phone: <em>add number here</em><br>
+        <!-- ADD YOUR EMAIL -->
+        Email: <em>add email here</em>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get Started</h4>
+      <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Jayfel Engineering Limited. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING WHATSAPP BUTTON ===================== -->
+<!-- ADD YOUR WHATSAPP NUMBER: replace 254700000000 below -->
+<a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+    <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.912 6.482L4 29l7.72-1.877A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.583 1.114 1.14-4.464-.232-.366A9.78 9.78 0 0 1 5.818 15c0-5.618 4.564-10.182 10.183-10.182 5.618 0 10.182 4.564 10.182 10.182 0 5.619-4.564 10.182-10.182 10.182zm5.593-7.632c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.968 1.198-.178.204-.357.23-.663.077-.306-.153-1.29-.475-2.457-1.516-.908-.81-1.522-1.812-1.7-2.118-.178-.306-.019-.472.134-.624.138-.137.306-.357.459-.535.153-.178.204-.306.306-.51.102-.204.05-.383-.026-.535-.077-.153-.688-1.658-.943-2.27-.248-.596-.5-.516-.688-.525-.178-.008-.383-.01-.586-.01-.204 0-.535.077-.815.383-.28.306-1.068 1.043-1.068 2.543 0 1.5 1.093 2.949 1.245 3.153.153.204 2.15 3.283 5.207 4.604.727.314 1.294.501 1.737.641.73.232 1.394.199 1.92.121.586-.087 1.81-.74 2.065-1.454.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var preloader = document.getElementById('preloader');
+    if (preloader) {
+      setTimeout(function () {
+        preloader.classList.add('preloader-hidden');
+      }, 300);
+    }
+
+    // Contact form → mailto handoff (no backend/database used)
+    var form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var name    = document.getElementById('cf-name').value.trim();
+        var email   = document.getElementById('cf-email').value.trim();
+        var phone   = document.getElementById('cf-phone').value.trim();
+        var subject = document.getElementById('cf-subject').value.trim() || 'Website Enquiry';
+        var message = document.getElementById('cf-message').value.trim();
+
+        // ADD YOUR EMAIL: replace the address below with your real inbox
+        var recipient = 'info@jayfelengineeringltd.com';
+
+        var body =
+          'Name: ' + name + '\n' +
+          'Email: ' + email + '\n' +
+          'Phone: ' + phone + '\n\n' +
+          message;
+
+        var mailtoLink =
+          'mailto:' + recipient +
+          '?subject=' + encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(body);
+
+        window.location.href = mailtoLink;
+      });
+    }
+  });
+</script>
+</body>
+  </html>
