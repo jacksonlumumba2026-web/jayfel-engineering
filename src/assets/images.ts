@@ -18,6 +18,8 @@ import mulwaFront from './mulwa-front.jpg'
 import mulwaShell from './mulwa-shell.jpg'
 import staffGroup from './staff-group.jpg'
 import staffSiteCrew from './staff-site-crew.jpg'
+import teamDuo from './team-duo.jpg'
+import teamTrio from './team-trio.jpg'
 import mtwapaPrideAerial from './mtwapa-pride-aerial.jpg'
 import mtwapaPrideBlock from './mtwapa-pride-block.jpg'
 import mtwapaPrideFacade from './mtwapa-pride-facade.jpg'
@@ -62,6 +64,8 @@ export const images: Record<string, string> = {
   'mulwa-front': mulwaFront,
   'staff-site-crew': staffSiteCrew,
   'staff-group': staffGroup,
+  'team-trio': teamTrio,
+  'team-duo': teamDuo,
 }
 
 export function img(key: string): string {

@@ -6,6 +6,7 @@ import Counter from '../components/Counter'
 import SectionHeading from '../components/SectionHeading'
 import Card from '../components/Card'
 import CtaBanner from '../components/CtaBanner'
+import ImageSlideshow from '../components/ImageSlideshow'
 import { COMPANY, STATS, SERVICES, PROJECTS, CERTIFICATES } from '../data/site'
 import { img } from '../assets/images'
 
@@ -107,15 +108,24 @@ export default function Home() {
           </Reveal>
           <Reveal delay={100}>
             <div className="grid grid-cols-2 gap-3">
-              <div className="img-zoom col-span-2 rounded-2xl">
-                <img src={img('structure-frame')} alt="Reinforced concrete structural works on a JAYFEL site" className="h-56 w-full rounded-2xl object-cover sm:h-64" loading="lazy" />
-              </div>
-              <div className="img-zoom rounded-2xl">
-                <img src={img('interior-kitchen')} alt="Finished interior fit-out on a JAYFEL development" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
-              </div>
-              <div className="img-zoom rounded-2xl">
-                <img src={img('excavation')} alt="Excavation works on a JAYFEL site" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
-              </div>
+              <ImageSlideshow
+                images={['staff-group', 'team-trio']}
+                alt="The JAYFEL Engineering team"
+                className="img-zoom col-span-2 h-56 w-full rounded-2xl sm:h-64"
+                interval={4000}
+              />
+              <ImageSlideshow
+                images={['director-james-ndata', 'staff-site-crew']}
+                alt="JAYFEL Engineering team member"
+                className="img-zoom h-32 w-full rounded-2xl sm:h-36"
+                interval={4500}
+              />
+              <ImageSlideshow
+                images={['director-felix-chebii', 'team-duo']}
+                alt="JAYFEL Engineering team members"
+                className="img-zoom h-32 w-full rounded-2xl sm:h-36"
+                interval={5000}
+              />
             </div>
           </Reveal>
         </div>
