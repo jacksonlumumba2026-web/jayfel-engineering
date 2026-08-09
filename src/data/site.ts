@@ -10,7 +10,6 @@ export const COMPANY = {
   whatsapp: '254726018397',
   email: 'jayfelengineering@gmail.com',
   addresses: [
-    'P.O. Box 15519 – 2100, Nakuru',
     'Robert Muli Gardens, Kilifi District, P.O. Box 150 – 80109',
   ],
   directors: [
