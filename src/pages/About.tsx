@@ -71,9 +71,18 @@ export default function About() {
             {COMPANY.directors.map((d, i) => (
               <Reveal key={d.role} delay={i * 80}>
                 <Card>
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full" style={{ background: 'var(--color-red-soft)' }}>
-                    <User size={28} style={{ color: 'var(--color-red-deep)' }} />
-                  </div>
+                  {d.photo ? (
+                    <img
+                      src={img(d.photo)}
+                      alt={d.role}
+                      className="h-16 w-16 rounded-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full" style={{ background: 'var(--color-red-soft)' }}>
+                      <User size={28} style={{ color: 'var(--color-red-deep)' }} />
+                    </div>
+                  )}
                   <h3 className="mt-4 text-lg font-bold" style={{ color: 'var(--color-red-deep)' }}>{d.role}</h3>
                   <p className="mt-2 text-sm" style={{ color: 'var(--color-muted)' }}>{d.description}</p>
                 </Card>

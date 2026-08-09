@@ -4,6 +4,8 @@ import certNcaLicense from './cert-nca-license.jpg'
 import certNcaRoads from './cert-nca-roads.jpg'
 import certTaxCompliance2025 from './cert-tax-compliance-2025.jpg'
 import certTaxCompliance from './cert-tax-compliance.jpg'
+import directorFelixChebii from './director-felix-chebii.jpg'
+import directorJamesNdata from './director-james-ndata.jpg'
 import excavation from './excavation.jpg'
 import foundationCages from './foundation-cages.jpg'
 import interiorKitchen from './interior-kitchen.jpg'
@@ -46,6 +48,8 @@ export const images: Record<string, string> = {
   'cert-nca-license': certNcaLicense,
   'cert-tax-compliance-2025': certTaxCompliance2025,
   'cert-tax-compliance': certTaxCompliance,
+  'director-james-ndata': directorJamesNdata,
+  'director-felix-chebii': directorFelixChebii,
 }
 
 export function img(key: string): string {

@@ -19,12 +19,14 @@ export const COMPANY = {
       role: 'Managing Director',
       nationality: 'Kenyan',
       description: 'Oversees company operations, client relationships and overall project delivery.',
+      photo: 'director-james-ndata',
     },
     {
       name: 'Felix Chebii',
       role: 'Director',
       nationality: 'Kenyan',
       description: 'Focuses on site management, technical compliance and quality control across projects.',
+      photo: 'director-felix-chebii',
     },
   ],
   bankers: [
