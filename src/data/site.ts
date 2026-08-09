@@ -148,7 +148,7 @@ export const PROJECTS: Project[] = [
     location: 'Plot No. 9122/647 & 648, Mtwapa, Kilifi',
     client: 'Solian Limited',
     description:
-      'A follow-on apartment development for Solian Limited, registered with the National Construction Authority in July 2022 and delivered as main contractor from foundation through to finishes.',
+      'A follow-on apartment development for Solian Limited, registered with the National Construction Authority in July 2022 and delivered as main contractor from foundation through to finishes. Officially opened on 21st September 2024 by Kyalo Ilunga, Director of Solian.',
     gallery: ['pride3-foundation', 'pride3-concrete', 'foundation-cages', 'site-team'],
   },
   {
