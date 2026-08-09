@@ -111,10 +111,27 @@ export default function Home() {
                 <img src={img('structure-frame')} alt="Reinforced concrete structural works on a JAYFEL site" className="h-56 w-full rounded-2xl object-cover sm:h-64" loading="lazy" />
               </div>
               <div className="img-zoom rounded-2xl">
-                <img src={img('site-team')} alt="JAYFEL site team on location" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
+                <img src={img('interior-kitchen')} alt="Finished interior fit-out on a JAYFEL development" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
               </div>
               <div className="img-zoom rounded-2xl">
                 <img src={img('excavation')} alt="Excavation works on a JAYFEL site" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
+              </div>
+            </div>
+          </Reveal>
+        </div>
+
+        <div className="container-page">
+          <Reveal delay={150}>
+            <div className="mt-16 border-t pt-16" style={{ borderColor: 'var(--color-border)' }}>
+              <p className="eyebrow">Our team</p>
+              <h3 className="mt-2 text-2xl font-extrabold sm:text-3xl">The people behind every build</h3>
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                <div className="img-zoom rounded-2xl">
+                  <img src={img('site-team')} alt="JAYFEL site team on location" className="h-56 w-full rounded-2xl object-cover sm:h-64" loading="lazy" />
+                </div>
+                <div className="img-zoom rounded-2xl">
+                  <img src={img('staff-site-crew')} alt="JAYFEL staff member on site" className="h-56 w-full rounded-2xl object-cover object-top sm:h-64" loading="lazy" />
+                </div>
               </div>
             </div>
           </Reveal>
