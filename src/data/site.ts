@@ -76,13 +76,13 @@ export const SERVICES = [
   {
     slug: 'project-management',
     title: 'Project Management',
-    summary: 'Site supervision, programme control and quality assurance from mobilisation to handover.',
+    summary: 'Mobilisation, site clearance, surveying and progress monitoring through every stage of works.',
     bullets: ['Site supervision', 'Programme & cost control', 'Quality assurance'],
   },
   {
-    slug: 'design-consultation',
-    title: 'Design Consultation',
-    summary: 'Practical input on buildability, materials and sequencing alongside your design team.',
+    slug: 'engineering-consultancy',
+    title: 'Engineering Consultancy',
+    summary: 'Work methodology, materials sourcing and buildability advice tailored to your budget.',
     bullets: ['Buildability review', 'Materials advice', 'Construction sequencing'],
   },
 ]

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
-import { ArrowRight, ShieldCheck, Award, Users, ArrowUpRight, CheckCircle2 } from 'lucide-react'
+import { ArrowRight, ShieldCheck, ArrowUpRight, CheckCircle2 } from 'lucide-react'
 import Reveal from '../components/Reveal'
 import Counter from '../components/Counter'
 import SectionHeading from '../components/SectionHeading'
@@ -36,15 +36,15 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: 'linear-gradient(115deg, rgba(28,29,32,.96) 20%, rgba(28,29,32,.65) 60%, rgba(226,39,48,.35) 100%)' }} />
         <div className="container-page relative py-28 sm:py-36 lg:py-44">
           <Reveal>
-            <p className="eyebrow" style={{ color: '#F3B4B7' }}>NCA-registered contractor · Kenya</p>
+            <p className="eyebrow" style={{ color: '#F3B4B7' }}>NCA-registered contractor · since {COMPANY.incorporatedDate.split(' ').pop()}</p>
           </Reveal>
           <Reveal delay={100}>
             <h1 className="mt-5 max-w-2xl text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
-              Building Kenya's homes with precision and integrity
+              Building homes that raise the <span style={{ color: 'var(--color-red)' }}>standard of living.</span>
             </h1>
           </Reveal>
           <Reveal delay={200}>
-            <p className="mt-6 max-w-xl text-lg text-white/75">{COMPANY.mission}.</p>
+            <p className="mt-6 max-w-xl text-lg text-white/75">{COMPANY.name} is a Kenyan construction and engineering company delivering residential, commercial and civil works — from foundation to handover.</p>
           </Reveal>
           <Reveal delay={300}>
             <div className="mt-9 flex flex-wrap gap-4">
@@ -57,13 +57,7 @@ export default function Home() {
             </div>
           </Reveal>
           <Reveal delay={400}>
-            <div className="mt-10 flex flex-wrap gap-3">
-              {['Incorporated 2019', 'NCA5 Building', 'NCA8 Road works', 'KRA compliant'].map((chip) => (
-                <span key={chip} className="flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold text-white/80">
-                  <CheckCircle2 size={14} style={{ color: 'var(--color-red)' }} /> {chip}
-                </span>
-              ))}
-            </div>
+            <p className="eyebrow mt-8" style={{ color: 'var(--color-red)' }}>{COMPANY.motto.toUpperCase()}</p>
           </Reveal>
         </div>
       </section>
@@ -84,15 +78,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What we do */}
+      {/* Who we are */}
       <section className="section-pad">
+        <div className="container-page grid items-center gap-12 lg:grid-cols-2">
+          <Reveal>
+            <p className="eyebrow">Who we are</p>
+            <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">A contractor built on compliance, craft and clear communication.</h2>
+            <p className="mt-5" style={{ color: 'var(--color-muted)' }}>
+              Incorporated in Kenya on {COMPANY.incorporatedDate}, {COMPANY.name} is a private limited company registered
+              with the National Construction Authority for both building works and road works. We work as main
+              contractor on apartment developments and private residential blocks, and we handle every stage —
+              mobilisation, site clearance, surveying, earthworks, concrete works and finishes.
+            </p>
+            <ul className="mt-6 space-y-3">
+              {[
+                'NCA5 Building Works and NCA8 Road Works registration',
+                'NCA Certificate of Compliance on completed developments',
+                'Valid KRA tax compliance certification',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2.5 text-sm font-medium" style={{ color: 'var(--color-charcoal-soft)' }}>
+                  <CheckCircle2 size={18} className="mt-0.5 flex-shrink-0" style={{ color: 'var(--color-red)' }} /> {item}
+                </li>
+              ))}
+            </ul>
+            <Link to="/about" className="mt-6 inline-flex items-center gap-1 text-sm font-bold" style={{ color: 'var(--color-red-deep)' }}>
+              More about JAYFEL <ArrowUpRight size={16} />
+            </Link>
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="grid grid-cols-2 gap-3">
+              <div className="img-zoom col-span-2 rounded-2xl">
+                <img src={img('structure-frame')} alt="Reinforced concrete structural works on a JAYFEL site" className="h-56 w-full rounded-2xl object-cover sm:h-64" loading="lazy" />
+              </div>
+              <div className="img-zoom rounded-2xl">
+                <img src={img('site-team')} alt="JAYFEL site team on location" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
+              </div>
+              <div className="img-zoom rounded-2xl">
+                <img src={img('excavation')} alt="Excavation works on a JAYFEL site" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* What we do */}
+      <section className="section-pad" style={{ background: 'var(--color-surface)' }}>
         <div className="container-page">
           <Reveal>
-            <SectionHeading eyebrow="What we do" title="Construction services built around you" intro="From foundations to finishes, we deliver residential and commercial projects across Kilifi County and beyond." />
+            <SectionHeading eyebrow="What we do" title="Full-scope construction and engineering services" intro="From ground breaking to handover, our teams cover the structural, civil and management work your project needs." />
           </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.slice(0, 6).map((s, i) => (
-              <Reveal key={s.slug} delay={i * 60}>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {SERVICES.map((s, i) => (
+              <Reveal key={s.slug} delay={(i % 4) * 60}>
                 <Card>
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl" style={{ background: 'var(--color-red-soft)' }}>
                     <ShieldCheck size={20} style={{ color: 'var(--color-red-deep)' }} />
@@ -105,41 +142,44 @@ export default function Home() {
           </div>
           <div className="mt-10 text-center">
             <Link to="/services" className="inline-flex items-center gap-1 text-sm font-bold" style={{ color: 'var(--color-red-deep)' }}>
-              View all services <ArrowUpRight size={16} />
+              Explore all services <ArrowUpRight size={16} />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Why JAYFEL */}
-      <section className="section-pad" style={{ background: 'var(--color-surface)' }}>
-        <div className="container-page grid items-center gap-12 lg:grid-cols-2">
+      {/* Why choose us */}
+      <section className="section-pad">
+        <div className="container-page">
           <Reveal>
-            <div className="img-zoom rounded-3xl">
-              <img src={img('site-team')} alt="JAYFEL site team on location" className="h-full w-full rounded-3xl object-cover" loading="lazy" />
-            </div>
+            <SectionHeading eyebrow="Why choose us" title="Compliant, accountable and site-proven" center />
           </Reveal>
-          <Reveal delay={100}>
-            <p className="eyebrow">Why JAYFEL</p>
-            <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">A registered contractor you can build with confidently</h2>
-            <div className="mt-6 space-y-5">
-              {[
-                { icon: Award, title: 'NCA registered & compliant', text: 'Registered for both building and road works, with an annual practising license.' },
-                { icon: Users, title: 'Hands-on site management', text: 'Our own supervisors on site every day — not subcontracted oversight.' },
-                { icon: ShieldCheck, title: 'Tax compliant & bonded', text: 'Fully KRA tax compliant, with established banking and audit relationships.' },
-              ].map((f) => (
-                <div key={f.title} className="flex gap-4">
-                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl" style={{ background: 'var(--color-red-soft)' }}>
-                    <f.icon size={18} style={{ color: 'var(--color-red-deep)' }} />
+          <div className="mt-12 grid gap-6 sm:grid-cols-3">
+            {[
+              {
+                title: 'Fully registered & compliant',
+                text: 'Registered with the National Construction Authority for building works (NCA5) and road works (NCA8), with a valid annual practising licence and KRA tax compliance.',
+              },
+              {
+                title: 'Certified delivery record',
+                text: 'Our Mtwapa Pride II development was certified by the NCA as fully compliant with Section 31 of the NCA Act — and officially opened in October 2022.',
+              },
+              {
+                title: 'A clear work methodology',
+                text: 'Mobilisation, site clearance, surveying and progress monitoring at every stage, so quantities and quality are verified as the build advances.',
+              },
+            ].map((f, i) => (
+              <Reveal key={f.title} delay={i * 80}>
+                <Card>
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl" style={{ background: 'var(--color-red-soft)' }}>
+                    <ShieldCheck size={20} style={{ color: 'var(--color-red-deep)' }} />
                   </div>
-                  <div>
-                    <h4 className="font-bold">{f.title}</h4>
-                    <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>{f.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
+                  <h3 className="text-lg font-bold">{f.title}</h3>
+                  <p className="mt-2 text-sm" style={{ color: 'var(--color-muted)' }}>{f.text}</p>
+                </Card>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
