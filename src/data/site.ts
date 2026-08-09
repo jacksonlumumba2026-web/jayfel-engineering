@@ -31,7 +31,7 @@ export const COMPANY = {
 
 export const STATS = [
   { value: 4, suffix: '+', label: 'Projects delivered & running' },
-  { value: 42, prefix: 'KSh ', suffix: 'M', label: 'Largest project value' },
+  { value: 156, prefix: 'KSh ', suffix: 'M', label: 'Largest project value' },
   { value: 2019, label: 'Incorporated in Kenya' },
   { value: 2, label: 'NCA registration categories' },
 ]
@@ -123,7 +123,7 @@ export const PROJECTS: Project[] = [
     status: 'Completed',
     location: 'Plot LR No. 9122/639, Mtwapa, Kilifi',
     client: 'Solian Limited',
-    value: 'KSh 42,000,000',
+    value: 'KSh 156,000,000',
     description:
       'A residential apartment development delivered as main contractor and certified by the National Construction Authority as fully compliant. Officially opened on 8th October 2022 by Meshack Kipturgo, Chairman of Solian.',
     gallery: [
@@ -134,30 +134,30 @@ export const PROJECTS: Project[] = [
   {
     slug: 'mtwapa-pride-iii',
     name: 'Mtwapa Pride III Apartments',
-    status: 'Ongoing',
+    status: 'Completed',
     location: 'Plot No. 9122/647 & 648, Mtwapa, Kilifi',
     client: 'Solian Limited',
     description:
-      'A follow-on apartment development for Solian Limited, registered with the National Construction Authority in July 2022. Works are currently at substructure stage with foundations and concrete works in progress.',
+      'A follow-on apartment development for Solian Limited, registered with the National Construction Authority in July 2022 and delivered as main contractor from foundation through to finishes.',
     gallery: ['pride3-foundation', 'pride3-concrete', 'foundation-cages', 'site-team'],
   },
   {
     slug: 'velma-flat',
     name: 'Velma Flat',
-    status: 'Ongoing',
+    status: 'Completed',
     location: 'Kilifi County',
     description:
-      'A residential flat development comprising studio apartments with parking and a rooftop terrace, currently in delivery from approved architectural designs.',
+      'A residential flat development comprising studio apartments with parking and a rooftop terrace, delivered from approved architectural designs.',
     gallery: ['velma-render', 'velma-front'],
   },
   {
     slug: 'residential-block-tracy-jerop',
     name: 'Residential Block — Tracy Jerop',
-    status: 'Ongoing',
+    status: 'Completed',
     location: 'Mtwapa Waybridge, Kilifi',
     client: 'Tracy Jerop',
     description:
-      'A private residential block with a stone perimeter wall and gate. The two-storey structure is under construction in concrete block work.',
+      'A private residential block with a stone perimeter wall and gate, completed as a two-storey structure in concrete block work.',
     gallery: ['jerop-render', 'jerop-site'],
   },
 ]
