@@ -21,20 +21,20 @@ Deploy the `dist/` folder to Netlify, Vercel or Cloudflare Pages.
 
 ## Images
 
-Real photos are in place for the logo, all project galleries, `site-team.jpg`, `structure-frame.jpg`,
-`rebar-slab.jpg`, `excavation.jpg`, and 5 certificates (incorporation, NCA road works license,
-NCA road works registration, and both KRA tax compliance certificates, 2022 and 2025).
+Every image in `src/assets/` is now a real photo — none of Lovable's branded placeholder
+graphics remain. That covers the logo, all project galleries, `site-team.jpg`,
+`structure-frame.jpg`, `rebar-slab.jpg`, `excavation.jpg`, `interior-kitchen.jpg`, and all
+6 certificates (incorporation, NCA building works, NCA road works, contractor license, and
+both KRA tax compliance certificates, 2022 and 2025).
 
-Note: the project photos (`mtwapa-pride-*`, `pride3-*`, `velma-*`, `jerop-*`) were assigned
-from a batch of uploaded site photos that weren't individually labelled by project — they're
-real JAYFEL site photos, but the specific pairing of photo to project name wasn't confirmed.
-Swap any of them for a better match any time by dropping a same-named `.jpg` into
-`src/assets/` — no code changes needed, since `src/assets/images.ts` maps every filename
-already used across the site.
-
-**Still placeholder (2 remaining):**
-- `interior-kitchen.jpg` — general interior shot used on the Services page
-- `cert-nca-building.jpg` — NCA registration, Building Works (Category NCA5)
+Note: the project photos (`mtwapa-pride-*`, `pride3-*`, `velma-*`, `jerop-*`) were largely
+assigned from a batch of uploaded site photos that weren't individually labelled by project —
+`mtwapa-pride-aerial.jpg`, `mtwapa-pride-front.jpg`, `velma-render.jpg` and `velma-front.jpg`
+were confirmed (matching filenames and content — e.g. `velma-render`/`velma-front` are the
+actual architectural elevation/render drawings), but the rest are a best-effort match rather
+than a confirmed pairing. Swap any of them for a better match any time by dropping a
+same-named `.jpg` into `src/assets/` — no code changes needed, since `src/assets/images.ts`
+maps every filename already used across the site.
 
 ## What's in this build
 
