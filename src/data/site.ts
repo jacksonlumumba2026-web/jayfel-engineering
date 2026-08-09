@@ -42,7 +42,7 @@ export const COMPANY = {
 }
 
 export const STATS = [
-  { value: 4, suffix: '+', label: 'Projects delivered & running' },
+  { value: 5, suffix: '+', label: 'Projects delivered & running' },
   { value: 156, prefix: 'KSh ', suffix: 'M', label: 'Largest project value' },
   { value: 2019, label: 'Incorporated in Kenya' },
   { value: 2, label: 'NCA registration categories' },
@@ -171,6 +171,16 @@ export const PROJECTS: Project[] = [
     description:
       'A private residential block with a stone perimeter wall and gate, completed as a two-storey structure in concrete block work.',
     gallery: ['jerop-render', 'jerop-site'],
+  },
+  {
+    slug: 'residential-building-justus-mulwa',
+    name: 'Residential Building — Justus Mulwa',
+    status: 'Completed',
+    location: 'Kilifi County',
+    client: 'Justus Mulwa',
+    description:
+      'A private two-storey residential building delivered as main contractor for client Justus Mulwa, from block walls and structural works through to a fully finished home.',
+    gallery: ['mulwa-blockwork', 'mulwa-shell', 'mulwa-complete', 'mulwa-front'],
   },
 ]
 

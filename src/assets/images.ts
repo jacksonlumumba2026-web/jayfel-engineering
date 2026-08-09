@@ -12,6 +12,10 @@ import interiorKitchen from './interior-kitchen.jpg'
 import jayfelLogo from './jayfel-logo.jpg'
 import jeropRender from './jerop-render.jpg'
 import jeropSite from './jerop-site.jpg'
+import mulwaBlockwork from './mulwa-blockwork.jpg'
+import mulwaComplete from './mulwa-complete.jpg'
+import mulwaFront from './mulwa-front.jpg'
+import mulwaShell from './mulwa-shell.jpg'
 import mtwapaPrideAerial from './mtwapa-pride-aerial.jpg'
 import mtwapaPrideBlock from './mtwapa-pride-block.jpg'
 import mtwapaPrideFacade from './mtwapa-pride-facade.jpg'
@@ -50,6 +54,10 @@ export const images: Record<string, string> = {
   'cert-tax-compliance': certTaxCompliance,
   'director-james-ndata': directorJamesNdata,
   'director-felix-chebii': directorFelixChebii,
+  'mulwa-blockwork': mulwaBlockwork,
+  'mulwa-shell': mulwaShell,
+  'mulwa-complete': mulwaComplete,
+  'mulwa-front': mulwaFront,
 }
 
 export function img(key: string): string {
