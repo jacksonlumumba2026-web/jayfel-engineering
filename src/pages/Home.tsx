@@ -131,12 +131,14 @@ export default function Home() {
                   images={['staff-group', 'staff-survey-team', 'team-trio']}
                   alt="The JAYFEL Engineering team"
                   className="img-zoom h-56 w-full rounded-2xl sm:h-64"
+                  imgClassName="object-top"
                   interval={4000}
                 />
                 <ImageSlideshow
                   images={['director-james-ndata', 'director-felix-chebii', 'staff-site-crew', 'team-duo']}
                   alt="JAYFEL Engineering team members"
                   className="img-zoom h-56 w-full rounded-2xl sm:h-64"
+                  imgClassName="object-top"
                   interval={4500}
                 />
               </div>

@@ -5,11 +5,13 @@ export default function ImageSlideshow({
   images,
   alt,
   className = '',
+  imgClassName = '',
   interval = 3500,
 }: {
   images: string[]
   alt: string
   className?: string
+  imgClassName?: string
   interval?: number
 }) {
   const [index, setIndex] = useState(0)
@@ -31,7 +33,7 @@ export default function ImageSlideshow({
           src={img(key)}
           alt={i === index ? alt : ''}
           aria-hidden={i !== index}
-          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000"
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${imgClassName}`}
           style={{ opacity: i === index ? 1 : 0 }}
           loading={i === 0 ? 'eager' : 'lazy'}
         />
