@@ -149,27 +149,58 @@ export default function Home() {
           <Reveal>
             <SectionHeading eyebrow="Our work" title="Featured projects" intro="A look at what we're building and what we've delivered." />
           </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {PROJECTS.slice(0, 3).map((p, i) => (
-              <Reveal key={p.slug} delay={i * 80}>
-                <Link to="/projects" className="group block overflow-hidden rounded-2xl border card-shadow card-shadow-hover" style={{ borderColor: 'var(--color-border)' }}>
-                  <div className="img-zoom relative h-52">
-                    <img src={img(p.gallery[0])} alt={p.name} className="h-full w-full object-cover" loading="lazy" />
-                    <span
-                      className="absolute left-4 top-4 rounded-full px-3 py-1 text-xs font-bold"
-                      style={{ background: p.status === 'Completed' ? 'var(--color-red)' : '#FFFFFF', color: p.status === 'Completed' ? '#FFFFFF' : 'var(--color-charcoal)' }}
-                    >
-                      {p.status}
-                    </span>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-bold group-hover:text-red" style={{ color: 'var(--color-charcoal)' }}>{p.name}</h3>
-                    <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>{p.location}</p>
-                  </div>
-                </Link>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal delay={100}>
+            <div className="marquee-wrap mt-12">
+              <div className="marquee-track">
+                {PROJECTS.map((p) => (
+                  <Link
+                    key={p.slug}
+                    to="/projects"
+                    className="marquee-card group block overflow-hidden rounded-2xl border card-shadow card-shadow-hover"
+                    style={{ borderColor: 'var(--color-border)' }}
+                  >
+                    <div className="img-zoom relative h-52">
+                      <img src={img(p.gallery[0])} alt={p.name} className="h-full w-full object-cover" loading="lazy" />
+                      <span
+                        className="absolute left-4 top-4 rounded-full px-3 py-1 text-xs font-bold"
+                        style={{ background: p.status === 'Completed' ? 'var(--color-red)' : '#FFFFFF', color: p.status === 'Completed' ? '#FFFFFF' : 'var(--color-charcoal)' }}
+                      >
+                        {p.status}
+                      </span>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="font-bold group-hover:text-red" style={{ color: 'var(--color-charcoal)' }}>{p.name}</h3>
+                      <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>{p.location}</p>
+                    </div>
+                  </Link>
+                ))}
+                {PROJECTS.map((p) => (
+                  <Link
+                    key={`${p.slug}-dup`}
+                    to="/projects"
+                    aria-hidden="true"
+                    tabIndex={-1}
+                    className="marquee-card group block overflow-hidden rounded-2xl border card-shadow card-shadow-hover"
+                    style={{ borderColor: 'var(--color-border)' }}
+                  >
+                    <div className="img-zoom relative h-52">
+                      <img src={img(p.gallery[0])} alt="" className="h-full w-full object-cover" loading="lazy" />
+                      <span
+                        className="absolute left-4 top-4 rounded-full px-3 py-1 text-xs font-bold"
+                        style={{ background: p.status === 'Completed' ? 'var(--color-red)' : '#FFFFFF', color: p.status === 'Completed' ? '#FFFFFF' : 'var(--color-charcoal)' }}
+                      >
+                        {p.status}
+                      </span>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="font-bold group-hover:text-red" style={{ color: 'var(--color-charcoal)' }}>{p.name}</h3>
+                      <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>{p.location}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

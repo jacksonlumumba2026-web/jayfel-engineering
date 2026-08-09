@@ -105,3 +105,39 @@
 .img-zoom:hover img {
   transform: scale(1.05);
 }
+
+.marquee-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  animation: marquee-scroll 32s linear infinite;
+}
+.marquee-wrap:hover .marquee-track,
+.marquee-wrap:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-card {
+  width: 320px;
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .marquee-card {
+    width: 260px;
+  }
+  .marquee-track {
+    animation-duration: 22s;
+  }
+}
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
