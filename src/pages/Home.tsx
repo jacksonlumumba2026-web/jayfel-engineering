@@ -128,7 +128,7 @@ export default function Home() {
               <h3 className="mt-2 text-2xl font-extrabold sm:text-3xl">The people behind every build</h3>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 <ImageSlideshow
-                  images={['staff-group', 'team-trio']}
+                  images={['staff-group', 'staff-survey-team', 'team-trio']}
                   alt="The JAYFEL Engineering team"
                   className="img-zoom h-56 w-full rounded-2xl sm:h-64"
                   interval={4000}

@@ -18,6 +18,7 @@ import mulwaFront from './mulwa-front.jpg'
 import mulwaShell from './mulwa-shell.jpg'
 import staffGroup from './staff-group.jpg'
 import staffSiteCrew from './staff-site-crew.jpg'
+import staffSurveyTeam from './staff-survey-team.jpg'
 import teamDuo from './team-duo.jpg'
 import teamTrio from './team-trio.jpg'
 import mtwapaPrideAerial from './mtwapa-pride-aerial.jpg'
@@ -64,6 +65,7 @@ export const images: Record<string, string> = {
   'mulwa-front': mulwaFront,
   'staff-site-crew': staffSiteCrew,
   'staff-group': staffGroup,
+  'staff-survey-team': staffSurveyTeam,
   'team-trio': teamTrio,
   'team-duo': teamDuo,
 }
