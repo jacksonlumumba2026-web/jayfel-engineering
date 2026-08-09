@@ -218,7 +218,7 @@ export const CERTIFICATES: Certificate[] = [
 ]
 
 export const DOCUMENTS = [
-  { label: 'Company Profile', href: '/docs/company-profile.pdf' },
-  { label: 'Projects Portfolio', href: '/docs/projects-portfolio.pdf' },
-  { label: 'Tax Compliance Certificate', href: '/docs/tax-compliance.pdf' },
+  { label: 'Company Profile (PDF)', href: '/docs/company-profile.pdf' },
+  { label: 'Projects Portfolio (PDF)', href: '/docs/projects-portfolio.pdf' },
+  { label: 'Tax Compliance Certificate 2025 (PDF)', href: '/docs/tax-compliance.pdf' },
 ]

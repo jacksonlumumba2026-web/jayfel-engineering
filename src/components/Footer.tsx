@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react'
 import logo from '../assets/jayfel-logo.jpg'
 import { COMPANY, SERVICES } from '../data/site'
 
@@ -15,14 +15,33 @@ export default function Footer() {
               JAYFEL Engineering
             </span>
           </div>
-          <p className="mt-4 text-sm text-white/60">{COMPANY.motto} — {COMPANY.mission}.</p>
+          <p className="mt-4 text-sm text-white/60">
+            {COMPANY.mission}. A Kenyan construction and engineering company registered with the National Construction Authority.
+          </p>
+          <div className="mt-5 flex items-center gap-3">
+            {[
+              { Icon: Facebook, label: 'Facebook' },
+              { Icon: Instagram, label: 'Instagram' },
+              { Icon: Linkedin, label: 'LinkedIn' },
+            ].map(({ Icon, label }) => (
+              <a
+                key={label}
+                href="#"
+                aria-label={label}
+                className="flex h-9 w-9 items-center justify-center rounded-full transition-colors"
+                style={{ background: 'rgba(255,255,255,.08)', color: 'rgba(255,255,255,.75)' }}
+              >
+                <Icon size={16} />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>
           <h4 className="text-sm font-bold uppercase tracking-wide text-white/80">Quick links</h4>
           <ul className="mt-4 space-y-2 text-sm text-white/60">
             {[
-              ['/about', 'About'],
+              ['/about', 'About Us'],
               ['/services', 'Services'],
               ['/projects', 'Projects'],
               ['/certifications', 'Certifications'],
@@ -64,21 +83,14 @@ export default function Footer() {
                 <span>{a}</span>
               </li>
             ))}
-            <li className="flex items-start gap-2">
-              <Clock size={15} className="mt-0.5 flex-shrink-0" style={{ color: 'var(--color-red)' }} />
-              <span>
-                {COMPANY.hours.map((h) => (
-                  <span key={h.day} className="block">{h.day}: {h.time}</span>
-                ))}
-              </span>
-            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10 py-5">
-        <p className="container-page text-center text-xs text-white/45">
-          © {year} JAYFEL Engineering Limited. All rights reserved.
-        </p>
+        <div className="container-page flex flex-col items-center justify-between gap-2 text-center text-xs text-white/45 sm:flex-row sm:text-left">
+          <p>© {year} JAYFEL Engineering Limited. All rights reserved.</p>
+          <p>PIN {COMPANY.kraPin} · NCA Reg. 53602/B/0722</p>
+        </div>
       </div>
     </footer>
   )
