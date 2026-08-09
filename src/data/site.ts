@@ -14,8 +14,18 @@ export const COMPANY = {
     'Robert Muli Gardens, Kilifi District, P.O. Box 150 – 80109',
   ],
   directors: [
-    { name: 'James Ndata', role: 'Managing Director', nationality: 'Kenyan' },
-    { name: 'Felix Chebii', role: 'Director', nationality: 'Kenyan' },
+    {
+      name: 'James Ndata',
+      role: 'Managing Director',
+      nationality: 'Kenyan',
+      description: 'Oversees company operations, client relationships and overall project delivery.',
+    },
+    {
+      name: 'Felix Chebii',
+      role: 'Director',
+      nationality: 'Kenyan',
+      description: 'Focuses on site management, technical compliance and quality control across projects.',
+    },
   ],
   bankers: [
     'Kenya Commercial Bank — Nakuru Branch',

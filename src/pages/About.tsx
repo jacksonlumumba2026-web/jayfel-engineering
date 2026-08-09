@@ -1,8 +1,10 @@
 import { Helmet } from 'react-helmet-async'
+import { User } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import Reveal from '../components/Reveal'
 import Card from '../components/Card'
 import CtaBanner from '../components/CtaBanner'
+import ImageSlideshow from '../components/ImageSlideshow'
 import { COMPANY } from '../data/site'
 import { img } from '../assets/images'
 
@@ -33,9 +35,11 @@ export default function About() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <div className="img-zoom h-full rounded-2xl">
-              <img src={img('rebar-slab')} alt="Reinforcement works on site" className="h-full w-full rounded-2xl object-cover" loading="lazy" />
-            </div>
+            <ImageSlideshow
+              images={['rebar-slab', 'structure-frame', 'excavation', 'site-team']}
+              alt="JAYFEL site works"
+              className="h-full min-h-[320px] rounded-2xl"
+            />
           </Reveal>
         </div>
       </section>
@@ -65,11 +69,13 @@ export default function About() {
           </Reveal>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {COMPANY.directors.map((d, i) => (
-              <Reveal key={d.name} delay={i * 80}>
+              <Reveal key={d.role} delay={i * 80}>
                 <Card>
-                  <h3 className="text-lg font-bold">{d.name}</h3>
-                  <p className="mt-1 text-sm font-semibold" style={{ color: 'var(--color-red-deep)' }}>{d.role}</p>
-                  <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>{d.nationality}</p>
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full" style={{ background: 'var(--color-red-soft)' }}>
+                    <User size={28} style={{ color: 'var(--color-red-deep)' }} />
+                  </div>
+                  <h3 className="mt-4 text-lg font-bold" style={{ color: 'var(--color-red-deep)' }}>{d.role}</h3>
+                  <p className="mt-2 text-sm" style={{ color: 'var(--color-muted)' }}>{d.description}</p>
                 </Card>
               </Reveal>
             ))}
