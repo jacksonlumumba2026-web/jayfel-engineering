@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://jayfelengineering.co.ke/</loc><priority>1.0</priority></url>
-  <url><loc>https://jayfelengineering.co.ke/about</loc><priority>0.8</priority></url>
-  <url><loc>https://jayfelengineering.co.ke/services</loc><priority>0.8</priority></url>
-  <url><loc>https://jayfelengineering.co.ke/projects</loc><priority>0.8</priority></url>
-  <url><loc>https://jayfelengineering.co.ke/certifications</loc><priority>0.7</priority></url>
-  <url><loc>https://jayfelengineering.co.ke/quote</loc><priority>0.9</priority></url>
-  <url><loc>https://jayfelengineering.co.ke/contact</loc><priority>0.7</priority></url>
+  <url><loc>https://jayfelengineering.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://jayfelengineering.com/about</loc><priority>0.8</priority></url>
+  <url><loc>https://jayfelengineering.com/services</loc><priority>0.8</priority></url>
+  <url><loc>https://jayfelengineering.com/projects</loc><priority>0.8</priority></url>
+  <url><loc>https://jayfelengineering.com/certifications</loc><priority>0.7</priority></url>
+  <url><loc>https://jayfelengineering.com/quote</loc><priority>0.9</priority></url>
+  <url><loc>https://jayfelengineering.com/contact</loc><priority>0.7</priority></url>
 </urlset>

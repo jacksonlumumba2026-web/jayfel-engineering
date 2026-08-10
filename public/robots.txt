@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jayfelengineering.co.ke/sitemap.xml
+Sitemap: https://jayfelengineering.com/sitemap.xml
