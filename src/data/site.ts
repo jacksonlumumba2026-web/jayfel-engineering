@@ -165,7 +165,7 @@ export const PROJECTS: Project[] = [
     slug: 'residential-block-tracy-jerop',
     name: 'Residential Block — Tracy Jerop',
     status: 'Completed',
-    location: 'Mtwapa Waybridge, Kilifi',
+    location: 'Vipingo Marijourn, Kilifi',
     client: 'Tracy Jerop',
     description:
       'A private residential block with a stone perimeter wall and gate, completed as a two-storey structure in concrete block work.',
