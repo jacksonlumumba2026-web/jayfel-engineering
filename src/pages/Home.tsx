@@ -126,20 +126,13 @@ export default function Home() {
             <div className="mt-16 border-t pt-16" style={{ borderColor: 'var(--color-border)' }}>
               <p className="eyebrow">Our team</p>
               <h3 className="mt-2 text-2xl font-extrabold sm:text-3xl">The people behind every build</h3>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="mt-6">
                 <ImageSlideshow
                   images={['staff-group', 'staff-survey-team', 'team-trio']}
                   alt="The JAYFEL Engineering team"
-                  className="img-zoom h-56 w-full rounded-2xl sm:h-64"
+                  className="img-zoom h-72 w-full rounded-2xl sm:h-96"
                   imgClassName="object-top"
                   interval={4000}
-                />
-                <ImageSlideshow
-                  images={['director-james-ndata', 'director-felix-chebii', 'staff-site-crew', 'team-duo']}
-                  alt="JAYFEL Engineering team members"
-                  className="img-zoom h-56 w-full rounded-2xl sm:h-64"
-                  imgClassName="object-top"
-                  interval={4500}
                 />
               </div>
             </div>
