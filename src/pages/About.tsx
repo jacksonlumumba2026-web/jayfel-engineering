@@ -27,10 +27,10 @@ export default function About() {
               JAYFEL Engineering Limited was incorporated on {COMPANY.incorporatedDate} under the Companies Act, 2015
               as a private limited company (Incorporation No. {COMPANY.incorporationNo}). Since then we have grown
               into a registered contractor with the National Construction Authority, delivering residential and
-              civil works across Kilifi County and beyond.
+              civil works to our clients across Kilifi County and beyond.
             </p>
             <p className="mt-4 leading-relaxed" style={{ color: 'var(--color-muted)' }}>
-              Every project we take on is registered, supervised and closed out to the standards our clients — and
+              Every project we take on is registered, supervised and closed out to the standards of our clients — and
               the Authority — expect. That discipline is what "{COMPANY.motto}" means in practice.
             </p>
           </Reveal>

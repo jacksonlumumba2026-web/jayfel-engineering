@@ -37,15 +37,18 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: 'linear-gradient(115deg, rgba(28,29,32,.96) 20%, rgba(28,29,32,.65) 60%, rgba(226,39,48,.35) 100%)' }} />
         <div className="container-page relative py-28 sm:py-36 lg:py-44">
           <Reveal>
-            <p className="eyebrow" style={{ color: '#F3B4B7' }}>NCA-registered contractor · since {COMPANY.incorporatedDate.split(' ').pop()}</p>
+            <p className="text-lg font-medium italic text-white sm:text-xl" style={{ fontFamily: 'var(--font-display)' }}>We've been expecting you...</p>
+          </Reveal>
+          <Reveal delay={50}>
+            <p className="eyebrow mt-4" style={{ color: '#F3B4B7' }}>NCA-registered contractor · since {COMPANY.incorporatedDate.split(' ').pop()}</p>
           </Reveal>
           <Reveal delay={100}>
             <h1 className="mt-5 max-w-2xl text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
-              Building homes that raise the <span style={{ color: 'var(--color-red)' }}>standard of living.</span>
+              Building Homes that <span style={{ color: 'var(--color-red)' }}>raises your standards of living</span>
             </h1>
           </Reveal>
           <Reveal delay={200}>
-            <p className="mt-6 max-w-xl text-lg text-white/75">{COMPANY.name} is a Kenyan construction and engineering company delivering residential, commercial and civil works — from foundation to handover.</p>
+            <p className="mt-6 max-w-xl text-lg text-white/75">Jayfel Eng ltd is a construction and eng company that deals with residential, commercial and civil works- from foundation to your handover!</p>
           </Reveal>
           <Reveal delay={300}>
             <div className="mt-9 flex flex-wrap gap-4">
