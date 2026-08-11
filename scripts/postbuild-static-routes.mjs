@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
 
-const routes = ['about', 'services', 'projects', 'certifications', 'quote', 'contact']
+const routes = ['about', 'services', 'projects', 'certifications', 'quote', 'estimator', 'contact']
 
 const html = readFileSync(join(distDir, 'index.html'), 'utf8')
 

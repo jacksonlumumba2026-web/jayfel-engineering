@@ -11,6 +11,7 @@ import Services from './pages/Services'
 import Projects from './pages/Projects'
 import Certifications from './pages/Certifications'
 import Quote from './pages/Quote'
+import Estimator from './pages/Estimator'
 import Contact from './pages/Contact'
 
 function ScrollToTopOnRoute() {
@@ -43,6 +44,7 @@ export default function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/certifications" element={<Certifications />} />
             <Route path="/quote" element={<Quote />} />
+            <Route path="/estimator" element={<Estimator />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
