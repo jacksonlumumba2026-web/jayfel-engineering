@@ -33,6 +33,7 @@ export const COMPANY = {
     'Family Bank — Mtwapa Branch, P.O. Box 536 – 20100, Mtwapa, Kilifi',
   ],
   auditors: 'Kirunga and Associates, Simphi House – Oloo Street, P.O. Box 2090 – 30100, Eldoret',
+  advocates: 'D. Abantu Advocates, Landmark Plaza, 4th Floor, P.O. Box 87239 – 00100, Nairobi. Tel: 0711 540 522, Email: abantuadvocates@gmail.com',
   hours: [
     { day: 'Monday – Friday', time: '8:00 AM – 5:30 PM' },
     { day: 'Saturday', time: '8:00 AM – 1:00 PM' },

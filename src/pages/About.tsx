@@ -105,6 +105,7 @@ export default function About() {
                 ['KRA PIN', COMPANY.kraPin],
                 ['Bankers', COMPANY.bankers.join(' · ')],
                 ['Auditors', COMPANY.auditors],
+                ['Advocates', COMPANY.advocates],
                 ['Registered addresses', COMPANY.addresses.join(' · ')],
               ].map(([label, value], i) => (
                 <div key={label} className={`grid gap-1 px-6 py-4 sm:grid-cols-3 sm:gap-4 ${i !== 0 ? 'border-t' : ''}`} style={{ borderColor: 'var(--color-border)' }}>
