@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About JAYFEL Engineering | Our Story & Directors</title>
+        <title>About JAYFEL Engineering Limited | Our Story & Directors</title>
         <meta name="description" content="Incorporated in 2019, JAYFEL Engineering Limited is an NCA-registered contractor in Kilifi, Kenya, led by James Ndata and Felix Chebii." />
       </Helmet>
 
@@ -37,7 +37,7 @@ export default function About() {
           <Reveal delay={100}>
             <ImageSlideshow
               images={['rebar-slab', 'structure-frame', 'excavation', 'site-team']}
-              alt="JAYFEL site works"
+              alt="JAYFEL Engineering Limited site works"
               className="h-full min-h-[320px] rounded-2xl"
             />
           </Reveal>

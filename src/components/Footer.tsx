@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <img src={logo} alt="" className="h-10 w-10 rounded-lg object-cover" />
             <span className="text-lg font-extrabold" style={{ fontFamily: 'var(--font-display)' }}>
-              JAYFEL Engineering
+              JAYFEL Engineering Limited
             </span>
           </div>
           <p className="mt-4 text-sm text-white/60">

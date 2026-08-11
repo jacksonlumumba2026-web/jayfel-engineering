@@ -29,7 +29,7 @@ export default function Contact() {
         <meta name="description" content="Get in touch with JAYFEL Engineering Limited in Mtwapa, Kilifi County, Kenya — phone, email, WhatsApp and office hours." />
       </Helmet>
 
-      <PageHero eyebrow="Get in touch" title="Contact JAYFEL Engineering" image={img('excavation')} />
+      <PageHero eyebrow="Get in touch" title="Contact JAYFEL Engineering Limited" image={img('excavation')} />
 
       <section className="section-pad">
         <div className="container-page grid gap-12 lg:grid-cols-2">
@@ -91,7 +91,7 @@ export default function Contact() {
                 </div>
               </div>
               <a
-                href={`https://wa.me/${COMPANY.whatsapp}?text=Hello%20JAYFEL%2C%20I%27d%20like%20to%20discuss%20a%20construction%20project.`}
+                href={`https://wa.me/${COMPANY.whatsapp}?text=Hello%20JAYFEL%20Engineering%20Limited%2C%20I%27d%20like%20to%20discuss%20a%20construction%20project.`}
                 target="_blank" rel="noopener noreferrer"
                 className="btn-primary w-full"
                 style={{ background: '#25D366', boxShadow: 'none' }}
@@ -106,7 +106,7 @@ export default function Contact() {
           <div className="container-page mt-16">
             <div className="overflow-hidden rounded-2xl border card-shadow" style={{ borderColor: 'var(--color-border)' }}>
               <iframe
-                title="JAYFEL Engineering location map"
+                title="JAYFEL Engineering Limited location map"
                 src="https://www.google.com/maps?q=Mtwapa,+Kilifi+County,+Kenya&output=embed"
                 width="100%"
                 height="420"

@@ -42,7 +42,7 @@ export default function Header() {
           <img src={logo} alt="JAYFEL Engineering Limited" className="h-11 w-11 rounded-xl object-cover" />
           <span className="flex flex-col leading-tight">
             <span className="text-lg font-extrabold" style={{ fontFamily: 'var(--font-display)' }}>
-              JAYFEL <span style={{ color: 'var(--color-red)' }}>Engineering</span>
+              JAYFEL <span style={{ color: 'var(--color-red)' }}>Engineering</span> Limited
             </span>
             <span className="hidden text-xs sm:block" style={{ color: 'var(--color-muted)' }}>
               {COMPANY.motto}

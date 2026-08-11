@@ -26,7 +26,7 @@ export default function Projects() {
     <>
       <Helmet>
         <title>Our Projects | JAYFEL Engineering Limited</title>
-        <meta name="description" content="Completed and ongoing residential developments by JAYFEL Engineering in Mtwapa and Kilifi County, Kenya." />
+        <meta name="description" content="Completed and ongoing residential developments by JAYFEL Engineering Limited in Mtwapa and Kilifi County, Kenya." />
       </Helmet>
 
       <PageHero eyebrow="Portfolio" title="Projects delivered and in progress" image={img('mtwapa-pride-block')} />

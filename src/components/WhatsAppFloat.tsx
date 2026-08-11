@@ -1,7 +1,7 @@
 export default function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/254726018397?text=Hello%20JAYFEL%2C%20I%27d%20like%20to%20discuss%20a%20construction%20project."
+      href="https://wa.me/254726018397?text=Hello%20JAYFEL%20Engineering%20Limited%2C%20I%27d%20like%20to%20discuss%20a%20construction%20project."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg transition-transform hover:-translate-y-1"

@@ -106,19 +106,19 @@ export default function Home() {
               ))}
             </ul>
             <Link to="/about" className="mt-6 inline-flex items-center gap-1 text-sm font-bold" style={{ color: 'var(--color-red-deep)' }}>
-              More about JAYFEL <ArrowUpRight size={16} />
+              More about JAYFEL Engineering Limited <ArrowUpRight size={16} />
             </Link>
           </Reveal>
           <Reveal delay={100}>
             <div className="grid grid-cols-2 gap-3">
               <div className="img-zoom col-span-2 rounded-2xl">
-                <img src={img('structure-frame')} alt="Reinforced concrete structural works on a JAYFEL site" className="h-56 w-full rounded-2xl object-cover sm:h-64" loading="lazy" />
+                <img src={img('structure-frame')} alt="Reinforced concrete structural works on a JAYFEL Engineering Limited site" className="h-56 w-full rounded-2xl object-cover sm:h-64" loading="lazy" />
               </div>
               <div className="img-zoom rounded-2xl">
-                <img src={img('interior-kitchen')} alt="Finished interior fit-out on a JAYFEL development" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
+                <img src={img('interior-kitchen')} alt="Finished interior fit-out on a JAYFEL Engineering Limited development" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
               </div>
               <div className="img-zoom rounded-2xl">
-                <img src={img('excavation')} alt="Excavation works on a JAYFEL site" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
+                <img src={img('excavation')} alt="Excavation works on a JAYFEL Engineering Limited site" className="h-32 w-full rounded-2xl object-cover sm:h-36" loading="lazy" />
               </div>
             </div>
           </Reveal>
@@ -132,7 +132,7 @@ export default function Home() {
               <div className="mt-6">
                 <ImageSlideshow
                   images={['staff-group', 'staff-survey-team', 'team-trio']}
-                  alt="The JAYFEL Engineering team"
+                  alt="The JAYFEL Engineering Limited team"
                   className="img-zoom h-72 w-full rounded-2xl sm:h-96"
                   imgClassName="object-top"
                   interval={4000}
