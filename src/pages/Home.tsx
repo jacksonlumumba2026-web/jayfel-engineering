@@ -48,7 +48,7 @@ export default function Home() {
             </h1>
           </Reveal>
           <Reveal delay={200}>
-            <p className="mt-6 max-w-xl text-lg text-white/75">Jayfel Eng ltd is a construction and eng company that deals with residential, commercial and civil works- from foundation to your handover!</p>
+            <p className="mt-6 max-w-xl text-lg text-white/75">JAYFEL Engineering Limited is a construction and engineering company that deals with residential, commercial and civil works- from foundation to your handover!</p>
           </Reveal>
           <Reveal delay={300}>
             <div className="mt-9 flex flex-wrap gap-4">
