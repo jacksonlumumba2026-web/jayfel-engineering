@@ -26,6 +26,7 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact Us | JAYFEL Engineering Limited</title>
+        <link rel="canonical" href="https://jayfelengineering.com/contact/" />
         <meta name="description" content="Get in touch with JAYFEL Engineering Limited in Mtwapa, Kilifi County, Kenya — phone, email, WhatsApp and office hours." />
       </Helmet>
 

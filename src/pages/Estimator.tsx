@@ -30,6 +30,7 @@ export default function Estimator() {
     <>
       <Helmet>
         <title>Project Cost Estimator | JAYFEL Engineering Limited</title>
+        <link rel="canonical" href="https://jayfelengineering.com/estimator/" />
         <meta name="description" content="Get an instant, ballpark construction cost estimate for residential, commercial and industrial buildings on the Kenyan coast." />
       </Helmet>
 

@@ -26,6 +26,7 @@ export default function Projects() {
     <>
       <Helmet>
         <title>Our Projects | JAYFEL Engineering Limited</title>
+        <link rel="canonical" href="https://jayfelengineering.com/projects/" />
         <meta name="description" content="Completed and ongoing residential developments by JAYFEL Engineering Limited in Mtwapa and Kilifi County, Kenya." />
       </Helmet>
 

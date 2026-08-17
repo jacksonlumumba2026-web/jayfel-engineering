@@ -50,6 +50,7 @@ export default function Quote() {
     <>
       <Helmet>
         <title>Request a Quote | JAYFEL Engineering Limited</title>
+        <link rel="canonical" href="https://jayfelengineering.com/quote/" />
         <meta name="description" content="Tell us about your construction project and get a clear, realistic quote from JAYFEL Engineering Limited." />
       </Helmet>
 

@@ -15,6 +15,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>JAYFEL Engineering Limited | NCA-Registered Kenyan Contractor</title>
+        <link rel="canonical" href="https://jayfelengineering.com/" />
         <meta name="description" content="JAYFEL Engineering Limited — NCA-registered construction contractor in Kilifi, Kenya. Your housing partner for residential, commercial and civil works." />
         <meta property="og:title" content="JAYFEL Engineering Limited" />
         <meta property="og:description" content="NCA-registered construction contractor in Kenya. Your housing partner." />
