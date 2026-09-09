@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { Send, Phone, Mail, CheckCircle2 } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import Reveal from '../components/Reveal'
-import { COMPANY, PROJECT_TYPES, BUDGET_RANGES } from '../data/site'
+import { COMPANY, PROJECT_TYPES, BUDGET_RANGES, telHref } from '../data/site'
 import { img } from '../assets/images'
 
 type Errors = Partial<Record<'name' | 'email' | 'phone' | 'projectType' | 'details', string>>
@@ -107,7 +107,7 @@ export default function Quote() {
                 ))}
               </ol>
               <div className="mt-6 space-y-2 border-t pt-5 text-sm" style={{ borderColor: 'var(--color-border)' }}>
-                <a href={`tel:${COMPANY.phones[0].replace(/\s/g, '')}`} className="flex items-center gap-2 font-semibold"><Phone size={15} style={{ color: 'var(--color-red)' }} /> {COMPANY.phones[0]}</a>
+                <a href={telHref(COMPANY.phones[0])} className="flex items-center gap-2 font-semibold"><Phone size={15} style={{ color: 'var(--color-red)' }} /> {COMPANY.phones[0]}</a>
                 <a href={`mailto:${COMPANY.email}`} className="flex items-center gap-2 font-semibold"><Mail size={15} style={{ color: 'var(--color-red)' }} /> {COMPANY.email}</a>
               </div>
             </div>

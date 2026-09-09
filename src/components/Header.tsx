@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, Phone } from 'lucide-react'
 import logo from '../assets/jayfel-logo.jpg'
-import { COMPANY } from '../data/site'
+import { COMPANY, telHref } from '../data/site'
 
 const LINKS = [
   { to: '/', label: 'Home' },
@@ -17,6 +17,7 @@ const LINKS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const { pathname } = useLocation()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
@@ -26,7 +27,7 @@ export default function Header() {
 
   useEffect(() => {
     setOpen(false)
-  }, [])
+  }, [pathname])
 
   const navClass = ({ isActive }: { isActive: boolean }) =>
     `text-sm font-semibold transition-colors ${isActive ? '' : 'hover:text-red'}`
@@ -103,7 +104,7 @@ export default function Header() {
               <Link to="/quote" onClick={() => setOpen(false)} className="btn-primary w-full">
                 Request a Quote
               </Link>
-              <a href={`tel:${COMPANY.phones[0].replace(/\s/g, '')}`} className="btn-outline w-full" style={{ borderColor: 'var(--color-border)', color: 'var(--color-charcoal)' }}>
+              <a href={telHref(COMPANY.phones[0])} className="btn-outline w-full" style={{ borderColor: 'var(--color-border)', color: 'var(--color-charcoal)' }}>
                 <Phone size={18} /> {COMPANY.phones[0]}
               </a>
             </div>

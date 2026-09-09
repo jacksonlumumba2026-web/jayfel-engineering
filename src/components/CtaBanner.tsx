@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Phone } from 'lucide-react'
-import { COMPANY } from '../data/site'
+import { COMPANY, telHref } from '../data/site'
 
 export default function CtaBanner({
   eyebrow = "Let's build together",
@@ -33,7 +33,7 @@ export default function CtaBanner({
                 {secondaryLabel}
               </Link>
             ) : (
-              <a href={`tel:${COMPANY.phones[0].replace(/\s/g, '')}`} className="btn-outline text-white">
+              <a href={telHref(COMPANY.phones[0])} className="btn-outline text-white">
                 <Phone size={18} /> {secondaryLabel || 'Call us'}
               </a>
             )}

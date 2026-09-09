@@ -20,7 +20,6 @@ export default function Lightbox({
       if (e.key === 'Escape') onClose()
       if (e.key === 'ArrowRight') onIndexChange((index + 1) % images.length)
       if (e.key === 'ArrowLeft') onIndexChange((index - 1 + images.length) % images.length)
-      if (e.key === 'Tab') e.preventDefault()
     }
     document.addEventListener('keydown', onKey)
     document.body.style.overflow = 'hidden'

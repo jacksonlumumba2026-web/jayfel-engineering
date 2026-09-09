@@ -41,6 +41,11 @@ export const COMPANY = {
   ],
 }
 
+// Strips spaces from a display-formatted phone number so it can be used in a tel: link.
+export function telHref(phone: string): string {
+  return `tel:${phone.replace(/\s/g, '')}`
+}
+
 export const STATS = [
   { value: 5, suffix: '+', label: 'Projects delivered & running' },
   { value: 156, prefix: 'KSh ', suffix: 'M', label: 'Largest project value' },

@@ -17,7 +17,10 @@ Then open the printed localhost URL.
 npm run build
 ```
 
-Deploy the `dist/` folder to Netlify, Vercel or Cloudflare Pages.
+Deployed automatically to GitHub Pages (custom domain `jayfelengineering.com`) by
+`.github/workflows/deploy.yml` on every push to `main`. The build step also runs
+`scripts/postbuild-static-routes.mjs`, which copies `index.html` into a real directory per
+route so GitHub Pages serves each page with an HTTP 200 instead of a client-side-only 404.
 
 ## Images
 
@@ -44,6 +47,7 @@ maps every filename already used across the site.
 - **Brand colors matched to the logo**: red `#E22730` / deep red `#A81E25` (from the roof),
   charcoal `#1C1D20` (from the outlines), white and gray — defined once as CSS variables in
   `src/index.css` and used everywhere via Tailwind's `@theme`, no hardcoded hex in components.
-- All 7 pages (Home, About, Services, Projects, Certifications, Quote, Contact), sticky header,
-  footer, WhatsApp float, scroll-to-top, scroll-reveal animations, animated stat counters,
-  filterable project gallery with a keyboard-accessible lightbox, and SEO tags per page.
+- All 8 pages (Home, About, Services, Projects, Certifications, Quote, Estimator, Contact),
+  sticky header, footer, WhatsApp float, scroll-to-top, scroll-reveal animations, animated
+  stat counters, filterable project gallery with a keyboard-accessible lightbox, and SEO tags
+  per page.

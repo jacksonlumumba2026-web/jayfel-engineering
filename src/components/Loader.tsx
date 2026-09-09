@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react'
 import logo from '../assets/jayfel-logo.jpg'
 
+// Total time the loader stays mounted. App.tsx uses this same value to know
+// when the underlying page should fade in, so the two stay in sync.
+export const LOADER_DURATION_MS = 1500
+
 export default function Loader() {
   const [visible, setVisible] = useState(true)
   const [exiting, setExiting] = useState(false)
 
   useEffect(() => {
-    const exitTimer = setTimeout(() => setExiting(true), 1100)
-    const removeTimer = setTimeout(() => setVisible(false), 1500)
+    const exitTimer = setTimeout(() => setExiting(true), LOADER_DURATION_MS - 400)
+    const removeTimer = setTimeout(() => setVisible(false), LOADER_DURATION_MS)
     return () => {
       clearTimeout(exitTimer)
       clearTimeout(removeTimer)

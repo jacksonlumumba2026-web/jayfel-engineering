@@ -28,7 +28,7 @@ export default function Home() {
           slogan: COMPANY.motto,
           email: COMPANY.email,
           telephone: COMPANY.phones[0],
-          address: COMPANY.addresses[1],
+          address: COMPANY.addresses[0],
         })}</script>
       </Helmet>
 

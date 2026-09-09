@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react'
 import logo from '../assets/jayfel-logo.jpg'
-import { COMPANY, SERVICES } from '../data/site'
+import { COMPANY, SERVICES, telHref } from '../data/site'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -70,7 +70,7 @@ export default function Footer() {
             {COMPANY.phones.map((p) => (
               <li key={p} className="flex items-center gap-2">
                 <Phone size={15} style={{ color: 'var(--color-red)' }} />
-                <a href={`tel:${p.replace(/\s/g, '')}`} className="hover:text-white">{p}</a>
+                <a href={telHref(p)} className="hover:text-white">{p}</a>
               </li>
             ))}
             <li className="flex items-center gap-2">

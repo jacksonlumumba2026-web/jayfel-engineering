@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import Reveal from '../components/Reveal'
-import { COMPANY } from '../data/site'
+import { COMPANY, telHref } from '../data/site'
 import { img } from '../assets/images'
 
 export default function Contact() {
@@ -72,7 +72,7 @@ export default function Contact() {
           <Reveal delay={100}>
             <div className="space-y-6 rounded-2xl border p-7 card-shadow" style={{ borderColor: 'var(--color-border)' }}>
               {COMPANY.phones.map((p) => (
-                <a key={p} href={`tel:${p.replace(/\s/g, '')}`} className="flex items-center gap-3 font-semibold">
+                <a key={p} href={telHref(p)} className="flex items-center gap-3 font-semibold">
                   <Phone size={18} style={{ color: 'var(--color-red)' }} /> {p}
                 </a>
               ))}
