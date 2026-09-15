@@ -12,7 +12,7 @@ export default function Services() {
     <>
       <Helmet>
         <title>Our Services | JAYFEL Engineering Limited</title>
-        <link rel="canonical" href="https://jayfelengineering.com/services/" />
+        <link rel="canonical" href="https://jayfelengineering.co.ke/services/" />
         <meta name="description" content="Residential, commercial, civil and structural construction services from an NCA-registered contractor in Kenya." />
       </Helmet>
 
