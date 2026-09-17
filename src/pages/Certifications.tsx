@@ -17,7 +17,7 @@ export default function Certifications() {
     <>
       <Helmet>
         <title>Certifications | JAYFEL Engineering Limited</title>
-        <link rel="canonical" href="https://jayfelengineering.co.ke/certifications/" />
+        <link rel="canonical" href="https://jayfel-engineering.co.ke/certifications/" />
         <meta name="description" content="NCA registration, contractor practising license, incorporation and KRA tax compliance certificates for JAYFEL Engineering Limited." />
       </Helmet>
 
