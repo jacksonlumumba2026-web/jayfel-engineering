@@ -47,7 +47,7 @@ export function telHref(phone: string): string {
 }
 
 export const STATS = [
-  { value: 5, suffix: '+', label: 'Projects delivered & running' },
+  { value: 100, suffix: '+', label: 'Projects delivered & running' },
   { value: 156, prefix: 'KSh ', suffix: 'M', label: 'Largest project value' },
   { value: 2019, label: 'Incorporated in Kenya' },
   { value: 2, label: 'NCA registration categories' },
